@@ -6,9 +6,10 @@
   "homepage": "https://github.com/yzzob/page-test/",
   "scripts": {
     "dev": "vite",
-    "build": "tsc -b && vite build",
-    "lint": "eslint .",
-    "preview": "vite preview"
+    "build": "vite build",
+    "predeploy": "npm run build",
+    "deploy": "master -d dist"
+    
   },
   "dependencies": {
     "react": "^19.1.0",
